@@ -1,0 +1,124 @@
+.flex-Work {
+    .flex-work-content {
+        .artical-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 150px;
+        }
+    }
+}
+
+.artical-intro {
+    background-color: #233831;
+    display: flex;
+    align-items: center;
+    width: auto !important;
+    margin: auto !important;
+    padding: 2rem 3rem;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+        font-size: clamp(2rem, 10vw, 4rem);
+    }
+    p{
+            max-width: 855px;
+            line-height: 1.5;
+            text-align: left;
+            font-size: 20px;
+            letter-spacing: 1px;
+    }
+}
+.artical-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto !important;
+    background-color: #233831;
+    padding: 40px;
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+        padding: 30px;
+        background-color: #2a4d43;
+        border-radius: 40px;
+        width: 100%;
+        max-width: 1418px;
+        h2{
+            display: flex;
+            justify-content: flex-end;
+            font-size: 35px;
+            opacity: 0.8;
+        }
+         h3 {
+            display: flex;
+            justify-content: flex-end;
+             font-size: 22px;
+             font-weight: 400;
+         }
+
+         p {
+             letter-spacing: 1px;
+             font-weight: 200;
+             text-align: justify;
+         }
+
+         
+    }
+
+    .article {
+        padding: 20px;
+        background-color: #234138;
+        border-radius: 30px;
+        border: 3px groove #dbfff22e;
+        text-align: left;
+        transition: all 0.3s ease-in-out;
+         &:hover {
+             border-radius: 30px;
+             background-color: #2a4d43;
+             border: 2px groove #dbfff27a;
+             transform: scale(1.03);
+             transition: 0.3s ease-in-out;
+         }
+    }
+
+    @media (max-width: 768px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+}
+       
+    .artical-conclusion{
+        background-color: #233831;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto !important;
+        text-align: left;
+        .conclusion-info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 854px;
+            
+        }
+            
+
+        h1 {
+            font-size: clamp(2rem, 10vw, 4rem);
+
+        }
+        p{
+            line-height: 1.5;
+            letter-spacing: 1px;
+            font-size: 20px;
+        }
+
+
+
+    }

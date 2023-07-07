@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,600&family=Roboto:ital,wght@0,100;1,300&family=Unbounded:wght@200;300;400;500;600;700;800;900&family=Urbanist:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@100;200;300;400;500;600&family=Poppins:ital,wght@0,100;1,600&family=Roboto:ital,wght@0,100;1,300&family=Unbounded:wght@200;300;400;500;600;700;800;900&family=Urbanist:wght@900&display=swap');
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +10,39 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  scroll-behavior: smooth;
+    transition: 0s;
+      animation: fadeInAnimation ease-in-out 2.1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      overflow-x: hidden;
 
+  
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Unbounded', sans-serif;
+  color: #8FDCC2;
+        cursor: pointer;
+}
+p, li,a {
+  font-family: 'Pathway Extreme', sans-serif;
+  color: #D4EDE4;
+  text-decoration: none;
+        cursor: pointer;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Poppins', sans-serif;
 }
