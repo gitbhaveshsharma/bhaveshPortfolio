@@ -1,0 +1,19 @@
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 150px;
+    text-align: center;
+}
+
+.marquee-content {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    word-wrap:none;
+    h2{
+         font-size: clamp(1rem, 5vw, 4rem);
+         color: white;
+         text-align: center;
+    }
+}

@@ -32,7 +32,7 @@ const About = () => {
   return (
     <>
       <div className="flex-about">
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="flex-about-cantent">
           <div style={{ marginTop: 90 }}>
             <h1 className="about-title">I'm Bhavesh.</h1>
@@ -55,17 +55,18 @@ const About = () => {
             <div className="flex-item">
               <div className="about-info">
                 <h1>
-                  I'm a AI & MERN Dev working remotely from 35°C Delhi,
-                  India.
+                  I'm a Data scientist & MERN Dev working remotely from 35°C
+                  Delhi, India.
                 </h1>
                 <p>
-                  Over the past 2+ years, I've worked in various areas of
+                  Over the past 1+ years, I've worked in various areas of
                   digital design, including front-end development, Model Trian,
                   and app UI/UX. I'm proud to have worn many hats.
                 </p>
                 <p>
-                  These days, I focus on building Help Scout's knowledge base
-                  and AI tools as a Senior Product Designer.
+                  These days, my focus lies in developing AI-based human action
+                  recognition systems and enhancing my knowledge in AI/ML
+                  algorithms.
                 </p>
               </div>
             </div>

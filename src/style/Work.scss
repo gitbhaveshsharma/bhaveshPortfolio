@@ -14,6 +14,7 @@
         flex-direction: column;
         text-align: center;
         height: 85vh;
+        
 
     .work-title {
         font-size: clamp(2rem, 10vw, 6rem);
@@ -243,4 +244,58 @@
     100% {
         background-color: rgba(0, 63, 63, 0.84);
     }
+}
+.animation {
+    height: 115px;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+
+.animation>div>div {
+    padding: 0.25rem 0.75rem;
+    height: 3.5rem;
+    margin-bottom: 3.5rem;
+    display: inline-block;
+    font-size: clamp(2rem, 10vw, 6rem);
+      font-family: 'Unbounded',
+      sans-serif;
+      color: #8FDCC2;
+      cursor: pointer;
+      font-weight: 700;
+}
+
+.animation div:first-child {
+    animation: text-animation 8s infinite;
+}
+
+
+@keyframes text-animation {
+    0% {
+        transform: translateY(-0);
+    }
+
+    20% {
+        transform: translateY(-5%);
+    }
+
+    40% {
+        transform: translateY(-215%);
+    }
+
+    60% {
+        transform: translateY(-215%);
+    }
+
+    80% {
+        transform: translateY(-405%);
+    }
+
+    95% {
+        transform: translateY(-405%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+
 }

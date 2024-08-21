@@ -1,20 +1,35 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./nav.scss"
+import { NavLink } from "react-router-dom";
+import "./nav.scss";
+
 const Navbar = () => {
   return (
     <nav className="nav">
       <ul>
         <li>
-          <Link to="/">
+          <NavLink
+            exact="true"
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Work <span className="slash"> / </span>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            About
+          </NavLink>
         </li>
         <li>
-          <Link to="/contact">Fun</Link>
+          <NavLink
+            to="/play"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Play
+          </NavLink>
         </li>
       </ul>
     </nav>

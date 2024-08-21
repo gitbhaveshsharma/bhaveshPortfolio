@@ -7,28 +7,35 @@ const ProjectList = () => {
       label: "Fake News Detection",
       githubUrl:
         "https://github.com/gitbhaveshsharma/Fake-News-and-Article.git",
-      blogUrl: "https://blog.google",
+      blogUrl:
+        "https://bhavesh-sharma.blogspot.com/2023/04/fake-news-and-article-in-todays-fast.html",
+    },
+    {
+      label: "Fraud Detection",
+      githubUrl:"#",
+      blogUrl:
+        "https://bhavesh-sharma.blogspot.com/2023/04/fake-news-and-article-in-todays-fast.html",
     },
     {
       label: "Future's Power: Predicting Energy Consumption",
       githubUrl: "https://github.com/facebook",
-      blogUrl: "https://engineering.fb.com",
+      blogUrl: "#",
     },
     {
       label: "Superstone Project PowerBI",
       githubUrl:
         "https://github.com/gitbhaveshsharma/Superstone_Project_PowerBI.git",
-      blogUrl: "https://blog.twitter.com",
+      blogUrl: "#",
     },
   ];
 
   return (
-    <div className="edu-flex-box">
+    <div className="edu-flex-box project">
       <h1>Projects:</h1>
       <ul className="edu-list">
         {links.map((link, index) => (
           <li key={index}>
-            <h1>{link.label}</h1>
+            <h2>{link.label}</h2>
             <a href={link.githubUrl} target="_blank" rel="noopener noreferrer">
               <span className="project-icon">
                 {React.createElement(FaGithub)}

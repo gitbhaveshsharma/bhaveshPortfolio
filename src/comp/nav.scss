@@ -1,72 +1,84 @@
 .nav {
-        position: fixed;
-        z-index: 10000;
-        top: 0%;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s all ease-in-out;
+
+  ul {
     display: flex;
-    justify-content: center;
-    transition: 0.5s ease-in-out;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 3px;
+    border-radius: 30px;
+    list-style-type: none;
+    text-align: center;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 600px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  li {
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 500;
+    transition: 0.3s all ease-in-out;
+    position: relative;
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 10px; // Adjust the position as needed
+      left: 0;
+      width: 0;
+      height: 2px; // Adjust the height as needed
+      background-color: #a5ecd5; // Use the current text color
+      transition: width 0.3s ease-out; // Adjust the duration and easing as needed
+    }
+    &.active::after,
+    &.active:hover::after {
+      width: 0; // Prevent hover effect on active elements
+    }
+
+    a {
+      text-decoration: none;
+      color: #d4ede4;
+      border-radius: 20px;
+      padding: 10px;
+      display: block;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .active {
+      background-color: #f4fffb1a;
+      border-radius: 20px;
+    }
+  }
+
+  .slash {
+    border: 3px solid #c7ffec5c;
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 0 7px;
+    color: #8fdcc2;
+  }
+
+  @media (max-width: 568px) {
     ul {
-        display: flex;
-        backdrop-filter: blur(5px);
-        width: 450px;
-        background-color: rgba(0, 0, 0, 0.2);
-        padding: 10px;
-        border-radius: 30px;
-        outline: none;
-        list-style-type: none;
-        text-align: center;
-        flex-direction: row;
-        justify-content: space-between;
+      width: 95%;
     }
 
     li {
-        color: white;
-        border-radius: 10px;
-        padding-left: 15px;
-        display: inline-block;
-        font-size: 18px;
-        padding: 6px;
-        padding-left: 14px;
-        padding-right: 14px;
-        margin-right: 100px;
-        font-weight: 500;
-        transition: 0.5s ease-in-out;
+      margin-right: 0;
     }
-
-    li:last-child {
-        margin-right: 0;
-    }
-
-    li a {
-        color: #D4EDE4;
-        text-decoration: none;
-    }
-
-    .slash {
-        border: 3px solid #c7ffec5c;
-        border-radius: 6px;
-        font-size: 15px;
-        box-shadow: 0px 0px 1px #8fdcc242;
-        padding-left: 7px;
-        padding-right: 7px;
-        color: #8FDCC2;
-    }
-
-    li:hover {
-        background-color: #f4fffb1a;
-        border-radius: 20px;
-        transition: 0.3s ease-in-out;
-    }
-
-    @media (max-width: 568px) {
-        ul {
-            width: 95%;
-        }
-
-        li {
-            margin-right: 50px;
-        }
-    }
-
+  }
 }
-

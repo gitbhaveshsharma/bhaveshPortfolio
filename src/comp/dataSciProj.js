@@ -25,9 +25,9 @@ const DataSciArticle = () => {
         </div>
       </div>
       <div className="artical-intro">
-        <h1>👨‍💻Introduction</h1>
+        <h1>Introduction</h1>
         <p>
-          🌟🌍 In today's data-driven world, data science has emerged as a
+          In today's data-driven world, data science has emerged as a
           crucial discipline, revolutionizing industries and transforming the
           way we make decisions. Data science projects encompass a wide range of
           applications, from predicting customer behavior to detecting anomalies
@@ -35,7 +35,7 @@ const DataSciArticle = () => {
           easy feat. It requires meticulous planning, a deep understanding of
           data, and an awareness of the challenges that lie ahead. In this blog
           post, we will explore the process of creating a data science project
-          and discuss the challenges one may encounter along the way. 📊🔬
+          and discuss the challenges one may encounter along the way.
         </p>
       </div>
       <div className="artical-content">
@@ -114,7 +114,7 @@ const DataSciArticle = () => {
             <h2>6.</h2>
             <h3>🕵️‍♂️ Interpretability and Explainability: </h3>
             <p>
-              🔍💡 In certain domains, interpretability and explainability of
+               In certain domains, interpretability and explainability of
               data science models are critical. Understanding how and why a
               model makes predictions is essential for gaining trust and making
               informed decisions. However, many state-of-the-art models, such as
@@ -122,14 +122,14 @@ const DataSciArticle = () => {
               making interpretation challenging. Overcoming this challenge
               involves employing interpretable models, model-agnostic
               interpretability techniques, or generating post-hoc explanations.
-              🕵️‍♂️📊
+  
             </p>
           </div>
         </div>
       </div>
       <div className="artical-conclusion">
         <div className="conclusion-info">
-          <h1>🌟Conclusion💡</h1>
+          <h1>Conclusion</h1>
           <p>
             Embarking on a data science project can be both exciting and
             challenging. Throughout the journey, one must navigate various
@@ -140,7 +140,7 @@ const DataSciArticle = () => {
             immense potential of data and drive impactful insights and
             innovations. Remember, perseverance, adaptability, and a continuous
             learning mindset are key to overcoming these challenges and
-            succeeding in the fascinating world of data science. 🚀📊
+            succeeding in the fascinating world of data science. 
           </p>
         </div>
       </div>

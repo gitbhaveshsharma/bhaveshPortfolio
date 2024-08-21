@@ -12,21 +12,25 @@ import rightImage from "../assets/React.png"
 import Slider from "../comp/slider";
 import "../style/Work.scss";
 
-
-
-
 const Work = () => {
   return (
     <>
       <div className="flex-Work">
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="flex-work-content">
           <div>
-            <h1 className="work-title">
-              Hi. I'm Bhavesh.
-              <br />
-              AI Developer.
-            </h1>
+            <h1 className="work-title">Hi. I'm Bhavesh.</h1>
+            <section class="animation">
+              <div class="first">
+                <div>Data Science</div>
+              </div>
+              <div class="second">
+                <div>Ai Developer</div>
+              </div>
+              <div class="third">
+                <div>MERN Developer</div>
+              </div>
+            </section>
             <p>
               As a Data Science and MERN (MongoDB, Express, React, Node.js)
               developer, <br />
@@ -46,20 +50,22 @@ const Work = () => {
               </span>
             </div>
             <div>
-              <p
-                style={{
-                  fontWeight: 400,
-                }}
-              >
-                GitHub
-              </p>
-              <p
-                style={{
-                  fontWeight: 700,
-                }}
-              >
-                Bhavesh Sharma
-              </p>
+              <a href="https://github.com/gitbhaveshsharma">
+                <p
+                  style={{
+                    fontWeight: 400,
+                  }}
+                >
+                  GitHub
+                </p>
+                <p
+                  style={{
+                    fontWeight: 700,
+                  }}
+                >
+                  Bhavesh Sharma
+                </p>
+              </a>
             </div>
           </div>
         </div>
@@ -138,10 +144,10 @@ const Work = () => {
         <div className="flex-item">
           <div className="right-flex-box" style={{ background: "#e8b89c" }}>
             <Link to="/DataScienceArticle">
-            <div className="right-info">
-              <p style={{ color: "#364442" }}>Trian Model</p>
-              <h2 style={{ color: "#364442" }}>Predictor</h2>{" "}
-            </div>
+              <div className="right-info">
+                <p style={{ color: "#364442" }}>Trian Model</p>
+                <h2 style={{ color: "#364442" }}>Predictor</h2>{" "}
+              </div>
             </Link>
 
             <div className="inner">

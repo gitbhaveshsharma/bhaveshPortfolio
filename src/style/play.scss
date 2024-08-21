@@ -1,0 +1,108 @@
+.flex-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-play-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 85vh;
+    line-height: 0.2;
+    .play-title {
+        font-size: clamp(8rem, 15vw, 15rem);
+        font-weight: 700;
+        color: #8FDCC2;
+    }
+
+    p {
+        word-wrap: break-word;
+        font-weight: 700;
+        font-size: 18px;
+        color: #D4EDE4;
+    }
+}
+.flex-play {
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.587));
+    animation: background 15s infinite ease-in-out;
+}
+
+@keyframes background {
+    0% {
+        background-color: rgba(0, 63, 63, 0.84);
+    }
+
+    25% {
+        background-color: #233831;
+    }
+
+    50% {
+        background-color: #92d000a1;
+    }
+
+    50% {
+        background-color: #008f5dc9;
+    }
+
+    60% {
+        background-color: #7dab00d9;
+    }
+
+    75% {
+        background-color: #3c5400b2;
+    }
+
+    85% {
+        background-color: #9430ffb2;
+    }
+
+    90% {
+        background-color: #14c0ffb2;
+    }
+
+    100% {
+        background-color: rgba(0, 63, 63, 0.84);
+    }
+}
+.marquee-play{
+    background-color: black;
+    color: white;
+}
+.comeing-soon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 85vh;
+    background-color: #233831;
+    .waviy {
+        position: relative;
+    }
+
+    .waviy span {
+        position: relative;
+        display: inline-block;
+        font-size: clamp(3rem, 15vw, 6rem);
+        font-family: 'Unbounded',
+        sans-serif;
+        font-weight: 700;
+        color:#8FDCC2;
+        text-transform: uppercase;
+        animation: flip 2s infinite;
+        animation-delay: calc(.2s * var(--i))
+    }
+
+    @keyframes flip {
+
+        0%,
+        80% {
+            transform: rotateY(360deg)
+        }
+    }
+}
